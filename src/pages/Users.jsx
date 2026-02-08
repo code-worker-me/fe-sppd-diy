@@ -18,6 +18,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { IoIosAdd } from "react-icons/io";
+import { CiTrash, CiSaveDown2 } from "react-icons/ci";
+import { MdModeEditOutline } from "react-icons/md";
 
 export default function Users() {
   return (
@@ -33,7 +36,7 @@ export default function Users() {
         <Dialog>
           <DialogTrigger asChild>
             <Button className="self-end mr-6" variant="outline">
-              Add User
+              <IoIosAdd /> Add User
             </Button>
           </DialogTrigger>
           <DialogContent>
@@ -66,14 +69,14 @@ export default function Users() {
               </div>
 
               <div className="flex justify-end gap-2 pt-4">
-                <Button type="submit">Simpan</Button>
+                <Button type="submit"><CiSaveDown2 /> Simpan</Button>
               </div>
             </form>
           </DialogContent>
         </Dialog>
 
         <Table>
-          <TableCaption>A list of Users.</TableCaption>
+          <TableCaption>Daftar pengguna terdaftar dalam sistem.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-25">NIP</TableHead>
@@ -92,14 +95,14 @@ export default function Users() {
               <TableCell className="text-center">
                 <div className="flex justify-center gap-2">
                   <Button variant="ghost" size="sm">
-                    Edit
+                    <MdModeEditOutline /> Edit
                   </Button>
                   <Button
                     variant="ghost"
                     size="sm"
                     className="text-red-600 hover:text-red-700"
                   >
-                    Delete
+                    Delete <CiTrash />
                   </Button>
                 </div>
               </TableCell>
