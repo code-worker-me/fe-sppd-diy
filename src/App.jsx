@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route element={<SidebarAdmin />}>
           <Route path="users" element={<Users />} />
           <Route path="sppd" element={<Sppd />} />
