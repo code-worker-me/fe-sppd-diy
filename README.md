@@ -26,7 +26,7 @@ Pastikan perangkat lunak berikut sudah terinstal di komputer Anda:
 1. **Clone Project**
    Buka terminal atau Command Prompt, lalu arahkan ke folder proyek:
    ```bash
-   git clone 
+   git clone https://github.com/code-worker-me/fe-sppd-diy.git
    ```
 
 2. **Instal Dependensi**
